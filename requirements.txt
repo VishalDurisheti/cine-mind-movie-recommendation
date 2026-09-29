@@ -1,0 +1,6 @@
+fastapi[standard]
+pandas
+numpy
+scikit-learn
+rapidfuzz
+jinja2

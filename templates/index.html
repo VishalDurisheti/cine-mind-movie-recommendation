@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineMind | AI Movie Recommendations</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>🎬</span>
+            CineMind
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#discover">Discover</a>
+            <a href="#recommendations">Recommendations</a>
+            <a href="#assistant">AI Assistant</a>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            AI Online
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                ✦ AI POWERED MOVIE DISCOVERY
+            </span>
+
+            <h1>
+                Find your next
+                <span>favorite movie.</span>
+            </h1>
+
+            <p>
+                Tell our AI what you're looking for and discover
+                movies that match your taste.
+            </p>
+
+
+            <!-- Search -->
+
+            <div class="search-container">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Try: sci-fi movies like Interstellar..."
+                >
+
+                <button id="send-button">
+                    Discover
+                </button>
+
+            </div>
+
+
+            <div class="suggestions">
+
+                <span>Try:</span>
+
+                <button
+                    onclick="useSuggestion('Sci-fi movies like Interstellar')">
+                    🚀 Sci-Fi
+                </button>
+
+                <button
+                    onclick="useSuggestion('Action movies with rating above 7')">
+                    ⚡ Action
+                </button>
+
+                <button
+                    onclick="useSuggestion('Comedy movies under 120 minutes')">
+                    😂 Comedy
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Recommendation Section -->
+
+    <section class="recommendation-section" id="recommendations">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-label">AI CURATED</span>
+
+                <h2>Recommended for you</h2>
+
+                <p id="recommendation-subtitle">
+                    Tell me what you want to watch.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Loading -->
+
+        <div id="loading" class="loading hidden">
+
+            <div class="spinner"></div>
+
+            <p>Finding movies for you...</p>
+
+        </div>
+
+
+        <!-- Movie cards -->
+
+        <div id="movie-grid" class="movie-grid">
+
+            <div class="empty-state">
+
+                <div class="empty-icon">🎬</div>
+
+                <h3>Your recommendations will appear here</h3>
+
+                <p>
+                    Describe the kind of movie you're looking for
+                    above.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI Assistant -->
+
+    <section class="assistant-section" id="assistant">
+
+        <div class="assistant-card">
+
+            <div class="assistant-icon">
+                ✦
+            </div>
+
+            <div>
+
+                <span class="section-label">
+                    AI MOVIE ASSISTANT
+                </span>
+
+                <h2>
+                    Not sure what to watch?
+                </h2>
+
+                <p>
+                    Describe your mood, genre, favorite movie,
+                    rating, runtime or release year.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="logo">
+            🎬 CineMind
+        </div>
+
+        <p>
+            AI-powered movie recommendations
+        </p>
+
+    </footer>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
